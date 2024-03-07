@@ -13,8 +13,8 @@
 
 .nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /* Adjusted to space items between the two ends */
+  align-items: center; /* Center items vertically */
   padding: 20px 0;
   border-bottom: 1px solid #ddd;
 }
@@ -22,7 +22,7 @@
 .nav a {
   text-decoration: none;
   padding: 10px;
-  color: #333;
+  color: #eee;
 }
 
 .nav a:hover {
@@ -30,30 +30,73 @@
 }
 
 .hero {
-  text-align: center;
-  padding: 50px 0;
+  text-align: left;
+  padding: 80px 0;
   background-color: #f0f0f0;
 }
 
 .hero h1 {
   font-size: 2em;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 0.8em;
+  padding-left: 20px;
   margin-bottom: 20px;
 }
 
 .hero button {
   background-color: #007bff;
   color: #fff;
+  padding-left: 40px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.services {
-  padding: 50px 0;
+.aboutUs {
+  padding: 20px 0; /* Add padding for spacing */
+  display: flex; /* Use flexbox */
+  justify-content: space-around; /* Distribute items evenly with space around them */
+  flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+  color: black;
 }
 
-.servicesGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.aboutUsCard {
+  flex-basis: calc(33.33% - 40px); /* Adjust basis to fit three cards with spacing */
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 250px; /* Adjust width based on content */
+  max-width: 100%; /* Ensure the card doesn't exceed its container's width */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  text-align: center; /* Center align text */
+}
+
+.aboutSagehill {
+  padding: 80px 0;
+  background-color: #f0f0f0;
+}
+
+.aboutSagehillContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.aboutSagehillImage {
+  flex: 0 0 30%; /* Adjust width of the image column */
+  /* You may add additional styling for the image container */
+}
+
+.aboutSagehillContent {
+  flex: 0 0 60%; /* Adjust width of the content column */
+  /* You may add additional styling for the content container */
 }
