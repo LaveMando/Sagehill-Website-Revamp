@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image'
 import styles from '../app/page.module.css';
 
 export default function Home() {
@@ -11,6 +12,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <nav className={styles.nav}>
+          <Image 
+          src="/Sagehill color (white text) logo.png"
+          width={120}
+          height={50}
+          />
           <a href="/">Home</a>
           <a href="/about">About Us</a>
           <a href="/products">Products & Services</a>
@@ -18,40 +24,58 @@ export default function Home() {
         </nav>
 
         <section className={styles.hero}>
-          <h1>Protecting Businesses in the Digital Age</h1>
-          <p>We are a leading cybersecurity company that helps businesses of all sizes protect their data and systems from cyberattacks.</p>
-          <button>Learn More</button>
+          <h1>Technology 
+            Simplified</h1>
+          <p>Enabling 4IR through Data 
+            Analytics</p>
+          <button>Contact Us</button>
         </section>
 
-        <section className={styles.services}>
-          <h2>Our Services</h2>
-          <div className={styles.servicesGrid}>
-            <div className={styles.serviceCard}>
-              <h3>Threat Detection & Response</h3>
-              <p>We use the latest technology to identify and respond to cyber threats in real-time.</p>
-            </div>
-            <div className={styles.serviceCard}>
-              <h3>Security Awareness Training</h3>
-              <p>We educate your employees on how to protect themselves from cyberattacks.</p>
-            </div>
-            <div className={styles.serviceCard}>
-              <h3>Vulnerability Management</h3>
-              <p>We identify and patch vulnerabilities in your systems before they can be exploited.</p>
-            </div>
-          </div>
-        </section>
+        <section className={styles.aboutUs}>
+  <div className={styles.container}>
+    <div className={styles.row}>
+      <div className={styles.aboutUsCard}>
+        <h3>Our Mission</h3>
+        <p>To assist individuals and organizations throughout the world to gain competitive advantage through the provision of innovative and simplified ICT business solutions that improve their profitability.</p>
+      </div>
+      <div className={styles.aboutUsCard}>
+        <h3>Our Vision</h3>
+        <p>To provide the business community with timely cost-effective and high-quality ICT products thereby maximizing wealth for stakeholders and other key stakeholders.</p>
+      </div>
+      <div className={styles.aboutUsCard}>
+        <h3>Did You Know?</h3>
+        <p>Sagehill Business Solutions is a wholly-owned Zimbabwean Company established in 2011 by an innovative team of highly motivated and energetic, young entrepreneurs with international experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <section className={styles.testimonials}>
-          <h2>What Our Clients Say</h2>
-          <div className={styles.testimonial}>
-            <p>"Cybersecurity Company has helped us to improve our security posture and protect our business from cyberattacks."</p>
-            <p>- John Doe, CEO, Acme Corporation</p>
-          </div>
-          <div className={styles.testimonial}>
-            <p>"I highly recommend Cybersecurity Company to any business that is serious about cybersecurity."</p>
-            <p>- Jane Smith, IT Manager, XYZ Company</p>
-          </div>
-        </section>
+
+
+<section className={styles.aboutSagehill}>
+  <div className={styles.aboutSagehillContainer}>
+    <div className={styles.aboutSagehillImage}>
+      {/* Your image component goes here */}
+    </div>
+    <div className={styles.aboutSagehillContent}>
+      <h2>About us</h2>
+      <p>Sagehill is an enabler of 4$IR (the 4th Industrial Revolution)
+        mainly focusing on digital transformation through business
+        process automation. We offer a wide range of ICT Solutions
+        including Mobile application development, Sagehill
+        Hospital Management Information System, Enterprise
+        Resource planning Software, Web Hosting and Web Design
+        services, Consultancy Services as well Computer Hardware
+        and Accessories Supply across Zimbabwe and Zambia. As 
+        Sagehill we have partnered with organisations such as IBM
+        and Palladium Accounting South Africa, UiPath, Microsoft,
+        Eset, Sophos and Kasperky to assist in the goal to simplify
+        technology.
+      </p>
+    </div>
+  </div>
+</section>
+
 
         <section className={styles.cta}>
           <h2>Contact Us Today</h2>
