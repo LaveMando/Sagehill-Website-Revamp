@@ -80,7 +80,6 @@
 
 .aboutSagehill {
   padding: 80px 0;
-  background-color: #f0f0f0;
 }
 
 .aboutSagehillContainer {
@@ -93,10 +92,8 @@
 
 .aboutSagehillImage {
   flex: 0 0 30%; /* Adjust width of the image column */
-  /* You may add additional styling for the image container */
 }
 
 .aboutSagehillContent {
   flex: 0 0 60%; /* Adjust width of the content column */
-  /* You may add additional styling for the content container */
 }
