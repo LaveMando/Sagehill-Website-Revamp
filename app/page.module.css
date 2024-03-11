@@ -57,7 +57,7 @@
   cursor: pointer;
 }
 
-.aboutUs {
+.aboutUs .row {
   padding: 20px 0; /* Add padding for spacing */
   display: flex; /* Use flexbox */
   justify-content: space-around; /* Distribute items evenly with space around them */
@@ -71,6 +71,7 @@
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 20px;
+  padding-top: 40px;
   margin-bottom: 20px;
   width: 250px; /* Adjust width based on content */
   max-width: 100%; /* Ensure the card doesn't exceed its container's width */
@@ -84,6 +85,7 @@
 
 .aboutSagehillContainer {
   display: flex;
+  padding-right: 20px;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
@@ -95,5 +97,96 @@
 }
 
 .aboutSagehillContent {
-  flex: 0 0 60%; /* Adjust width of the content column */
+  flex: 0 0 40%; /* Adjust width of the content column */
+}
+
+.services{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px;
+  text-align: center;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.serviceCard {
+  padding: 50px;
+  background-color: #0074D9;
+  color: #FFFFFF;
+  width: 200px;
+  /* height: 150px; */
+  padding: 10px; /* Reduced padding for better fit */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space evenly */
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+}
+
+.serviceCard h3 {
+  font-size: 10px; /* Increased font size for better readability */
+  font-weight: bold;
+  margin-bottom: 5px; /* Add some spacing below the heading */
+}
+
+.serviceCard p {
+  font-size: 8px; /* Adjusted font size for better fit */
+}
+
+.contact {
+  padding: 50px 0;
+  text-align: center; /* Center the content horizontally */
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  font-size: 2rem; /* Adjust font size as needed */
+}
+
+.contact p {
+  margin-bottom: 30px;
+  font-size: 1.1rem; /* Adjust font size as needed */
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 50%; /* Adjust width as needed */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.contactForm label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contactForm input,
+.contactForm textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.contactForm textarea {
+  height: 150px; /* Adjust height as needed */
+}
+
+.contactForm button {
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contactForm button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
 }
